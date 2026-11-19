@@ -1,0 +1,9 @@
+project: savantenvs/cyrus-imapd
+target: times
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/times/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_times
+    libfuzzer: true
+    timeout: 10

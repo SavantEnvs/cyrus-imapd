@@ -1,0 +1,9 @@
+project: savantenvs/cyrus-imapd
+target: cron
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/cron/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_cron
+    libfuzzer: true
+    timeout: 10

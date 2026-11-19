@@ -1,0 +1,4 @@
+expunge_days: 7d
+mailbox_idle_timeout: 1h30m
+imapidletimeout: -1
+autocreate_quota: 1G

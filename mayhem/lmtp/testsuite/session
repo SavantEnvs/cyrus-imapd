@@ -1,0 +1,17 @@
+LHLO client.example.com
+MAIL FROM:<sender@example.com> SIZE=120 BODY=8BITMIME
+RCPT TO:<fred@example.com>
+RCPT TO:<"bob smith"+box@example.org> NOTIFY=NEVER ORCPT=rfc822;bob@example.org
+DATA
+From: sender@example.com
+To: fred@example.com
+Subject: hello
+Message-ID: <1@example.com>
+Date: Thu, 19 Nov 2026 10:00:00 +0000
+
+body
+..dot
+.
+RSET
+NOOP
+QUIT

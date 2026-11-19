@@ -1,0 +1,5 @@
+LHLO x
+AUTH PLAIN AGZyZWQAc2VjcmV0
+MAIL FROM:<>
+RCPT TO:<bb+&AOk-t&AOk-@example.com>
+QUIT

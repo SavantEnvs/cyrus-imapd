@@ -1,0 +1,6 @@
+require ["fileinto","reject","vacation","imap4flags","variables","envelope","body","date","relational","comparator-i;ascii-numeric"];
+if header :contains "subject" "x" { fileinto "INBOX.x"; }
+elsif address :domain :is "from" "example.com" { addflag "\\Seen"; keep; }
+if body :text :contains "hi" { set "a" "${1}"; }
+if date :value "gt" "date" "year" "2020" { vacation :days 3 :subject "away" "gone"; }
+if size :over 100K { reject "too big"; stop; }

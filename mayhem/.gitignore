@@ -1,0 +1,4 @@
+# out-of-tree build directories written by mayhem/build.sh
+/build-fuzz/
+/build-afl/
+/build-test/
