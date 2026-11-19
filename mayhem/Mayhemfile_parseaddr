@@ -1,0 +1,9 @@
+project: savantenvs/cyrus-imapd
+target: parseaddr
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/parseaddr/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_parseaddr
+    libfuzzer: true
+    timeout: 10

@@ -1,0 +1,1 @@
+imap://fred;AUTH=*@server.example.com/INBOX/%E2%82%AC;UIDVALIDITY=123/;UID=5/;SECTION=1.2;PARTIAL=0.100;URLAUTH=user+fred

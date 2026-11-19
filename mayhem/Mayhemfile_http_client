@@ -1,0 +1,9 @@
+project: savantenvs/cyrus-imapd
+target: http_client
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/http_client/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_http_client
+    libfuzzer: true
+    timeout: 10

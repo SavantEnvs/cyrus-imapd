@@ -1,0 +1,3 @@
+atom "quoted \" str" {5}
+liter NIL 123 18446744073709551615 ~{3}
+abc

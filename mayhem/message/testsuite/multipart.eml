@@ -1,0 +1,32 @@
+From: a@b.c
+To: "X, Y" <x@y.z>, group: m@n.o;
+Subject: multi
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="BB"
+
+preamble
+--BB
+Content-Type: text/plain; charset=iso-8859-1
+Content-Transfer-Encoding: quoted-printable
+
+Caf=E9 =
+soft
+--BB
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: base64
+
+PGI+aGk8L2I+
+--BB
+Content-Type: message/rfc822
+
+From: inner@x
+Subject: inner
+Content-Type: text/plain
+
+inner body
+--BB
+Content-Type: application/octet-stream; name*=utf-8''f%C3%A9.bin
+Content-Disposition: attachment; filename="f.bin"
+
+xx
+--BB--

@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:4.0
+UID:urn:uuid:1
+FN:Jane Doe
+N:Doe;Jane;Q.;Dr.;PhD
+ADR;TYPE=home:;;1 Main St;Town;ST;12345;USA
+TEL;VALUE=uri;TYPE=cell:tel:+1-555-555-5555
+EMAIL;PREF=1:jane@example.com
+PHOTO:data:image/png;base64,iVBORw0KGgo=
+X-ABADR:us
+END:VCARD

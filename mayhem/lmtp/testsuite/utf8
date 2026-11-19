@@ -1,0 +1,10 @@
+LHLO x
+MAIL FROM:<@relay.example:a@b.example> SMTPUTF8 AUTH=<>
+RCPT TO:<postmaster>
+RCPT TO:<user+INBOX.sub@example.com>
+DATA
+Subject: =?utf-8?q?t=C3=A9st?=
+
+x
+.
+QUIT
